@@ -1,0 +1,59 @@
+#include <stdio.h>
+#define ACCBAL 100000
+#define TA1 20000
+#define TA2 50000
+unsigned long amount=100000, deposit,amountadded;
+int choice,  pin,i ,k;
+char transaction ='y';
+int  main()
+{
+    if (ACCBAL<=100000)
+    {
+
+     if(TA1>=amount added<=TA2)
+            {
+                while (i<3)
+                {
+                    while ( pin != 123456)
+                    {
+printf("ENTER YOUR SECRET UPI PIN NUMBER:");
+scanf("%d", &pin);
+                    }
+do
+{
+printf("Enter your choice: ");
+scanf("%d", &choice);
+switch (choice)
+{
+case 1:
+printf("\n YOUR BALANCE IN Rs : %lu ", amount);
+break;
+case 2:
+printf("\n ENTER THE AMOUNT TO DEPOSIT");
+scanf("%lu", &deposit);
+amount = amount + deposit;
+printf("YOUR BALANCE IS %lu", amount);
+break;
+case 3:
+printf("\n THANK U USING UPI");
+break;
+default:
+printf("\n INVALID CHOICE");
+}
+printf("\n\n\n DO U WISH TO HAVE ANOTHER TRANSCATION?(y/n): \n");
+fflush(stdin);
+scanf("%c", &transaction);
+if (transaction == 'n'|| transaction == 'N')
+k = 1;
+} while (!k);
+printf("\n\n THANKS FOR USING OUT UPI SERVICE");
+}
+
+
+         }
+
+    }
+}
+
+
+
